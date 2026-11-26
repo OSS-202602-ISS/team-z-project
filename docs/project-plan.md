@@ -16,20 +16,18 @@ this file:
 
 ## 1. The tool
 
-- **Name**: \<project name\>
-- **One sentence**: \<what it does, for whom\>
-- **Category**: design / development / management / operations automation / data processing / security
-- **Track**: A only / A + B (keep one)
-  - A = required for every team: a small tool built with whitelist libraries (fill the two blanks)
-  - B = challenge, optional: Track A plus one extension of your own tool
+- **Name**: Server Checker
+- **One sentence**: Reads a server list and shows the servers with status warn, for a lab admin.
+- **Category**: data processing
+- **Track**: A only
 
 ## 2. Scope - input, one processing step, output
 
 | | Our project |
 |---|---|
-| **Input** | \<file, values, or API response - be specific\> |
-| **Processing step** | \<the one decision or calculation the tool makes\> |
-| **Output** | \<terminal table / Excel file / log file - what the user sees\> |
+| **Input** | servers.csv (name, cpu, status) |
+| **Processing step** | keep the servers with status warn |
+| **Output** | a table on the screen and result.xlsx |
 
 **Definition of done**: one run command, one input, one output result.
 Anything beyond that is track B, not the baseline.
@@ -38,7 +36,8 @@ Anything beyond that is track B, not the baseline.
 
 | Library | Why we need it | On the whitelist? |
 |---|---|---|
-| \<library\> | \<reason\> | yes / ask instructor |
+| pandas | reads servers.csv | yes |
+| rich | prints the table | yes |
 
 One row for each library. For example: `| pandas | reads servers.csv | yes |`
 
@@ -52,10 +51,10 @@ this table.
 
 | Role | Who |
 |---|---|
-| PM | |
-| Developer | |
-| Documentation | |
-| Reviewer | |
+| PM | @staroun |
+| Developer | @staroun |
+| Documentation | @staroun |
+| Reviewer | @staroun |
 
 ## 5. Schedule
 
